@@ -166,6 +166,7 @@ img { max-width: 100%; display: block; }
 }
 .toc a:hover { color: var(--ink); }
 .toc a[aria-current="true"] { color: var(--accent); border-left-color: var(--accent); font-weight: 600; }
+.toc .lbl-short { display: none; }
 
 /* Reading column */
 main { padding-block: 56px 48px; max-width: 860px; min-width: 0; }
@@ -244,10 +245,13 @@ footer address { font-style: normal; }
   .links a { display: inline-block; padding-block: 3px; }
   .paper details { order: 2; }
   .paper h3 .br-wide { display: none; }
+  .toc a[href="#about"], .toc .lbl-long { display: none; }
+  .toc .lbl-short { display: inline; }
 }
 @media (max-width: 360px) {
   .shell { grid-template-columns: 80px minmax(0, 1fr); gap: 16px; }
   .portrait { width: 80px; height: 80px; }
+  .toc a { padding-inline: 7px; }
 }
 @media print {
   .shell { display: block; }
@@ -273,7 +277,8 @@ footer address { font-style: normal; }
     <nav class="toc" aria-label="Sections">
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
-      <a href="#wip">Work in progress</a>
+      <a href="#wp">Working papers</a>
+      <a href="#wip"><span class="lbl-long">Work in progress</span><span class="lbl-short">In progress</span></a>
     </nav>
   </aside>
 
@@ -335,8 +340,8 @@ footer address { font-style: normal; }
       </div>
     </section>
 
-    <section id="wip">
-      <h2>Selected work in progress</h2>
+    <section id="wp">
+      <h2>Working papers</h2>
       <div class="papers">
         <article class="paper">
           <div>
@@ -375,36 +380,6 @@ footer address { font-style: normal; }
 
         <article class="paper">
           <div>
-            <h3>Profit Shifting across Tax Havens: Evidence from the US Minimum Tax on Foreign Profits</h3>
-            <p class="authors">with Enea Baselgia and Julian Koller</p>
-            <p class="status">Presentation stage</p>
-            <details><summary>Abstract</summary><p>We study how minimum taxes affect where multinationals shift profits, using the US minimum tax on foreign profits introduced in 2017. We show that it led to substantial reallocations of profits across havens by narrowing the tax differences between them. Using detailed administrative data to look inside Switzerland, one of the major tax havens, we find that the profits of US-owned affiliates rose while their employment and sales fell.</p></details>
-          </div>
-          <ul class="links"></ul>
-        </article>
-
-        <article class="paper">
-          <div>
-            <h3>Geopolitical Risk, Trade, and Directed Innovation</h3>
-            <p class="authors">with Julian Schärer</p>
-            <p class="status">Presentation stage</p>
-            <details><summary>Abstract</summary><p>We study how the risk of trade fragmentation affects innovation decisions and growth, even before barriers to international trade are imposed. In a dynamic quantitative model, firms respond to fragmentation risk by directing R&amp;D toward sectors in which they would otherwise rely on imports, a force that we label <em>insurance innovation</em>. Because insurance innovation reduces the gains from specialization under free trade, the prospect of fragmentation can be costly even if it never materializes.</p></details>
-          </div>
-          <ul class="links"></ul>
-        </article>
-
-        <article class="paper">
-          <div>
-            <h3>Escaping Protectionism: Discriminatory Tariffs <br class="br-wide">and Endogenous Transshipment</h3>
-            <p class="authors">with Feodora Teti and Joschka Wanner</p>
-            <p class="status">Presentation stage</p>
-            <details><summary>Abstract</summary><p>We study how discriminatory tariffs create incentives to reroute goods through third countries, focusing on the 2025–26 US tariffs. In a quantitative trade model with endogenous transshipment, we show that rerouting substantially dampens the fall in US imports due to the additional tariffs and reduces tariff revenue. Standard quantifications that assume full enforcement of tariff hikes therefore overstate the effects of such barriers.</p></details>
-          </div>
-          <ul class="links"></ul>
-        </article>
-
-        <article class="paper">
-          <div>
             <h3><a href="https://drive.google.com/file/d/1--bmPpJSFhUwnKYzpmviAOW2vSvQjh0c/view?usp=sharing" target="_blank" rel="noopener">Harmonizing the Harmonized System</a></h3>
             <p class="authors">with Piotr Lukaszuk</p>
             <p class="status">Under construction</p>
@@ -415,6 +390,38 @@ footer address { font-style: normal; }
             <li><a href="https://drive.google.com/file/d/1--bmPpJSFhUwnKYzpmviAOW2vSvQjh0c/view?usp=sharing" target="_blank" rel="noopener">Draft</a></li>
             <li><a href="https://ux-tauri.unisg.ch/RePEc/usg/econwp/EWP-2212.pdf" target="_blank" rel="noopener">SEPS DP</a></li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="wip">
+      <h2>Selected work in progress</h2>
+      <div class="papers">
+        <article class="paper">
+          <div>
+            <h3>Profit Shifting across Tax Havens: Evidence from the US Minimum Tax on Foreign Profits</h3>
+            <p class="authors">with Enea Baselgia and Julian Koller</p>
+            <details><summary>Abstract</summary><p>We study how minimum taxes affect where multinationals shift profits, using the US minimum tax on foreign profits introduced in 2017. We show that it led to substantial reallocations of profits across havens by narrowing the tax differences between them. Using detailed administrative data to look inside Switzerland, one of the major tax havens, we find that the profits of US-owned affiliates rose while their employment and sales fell.</p></details>
+          </div>
+          <ul class="links"></ul>
+        </article>
+
+        <article class="paper">
+          <div>
+            <h3>Geopolitical Risk, Trade, and Directed Innovation</h3>
+            <p class="authors">with Julian Schärer</p>
+            <details><summary>Abstract</summary><p>We study how the risk of trade fragmentation affects innovation decisions and growth, even before barriers to international trade are imposed. In a dynamic quantitative model, firms respond to fragmentation risk by directing R&amp;D toward sectors in which they would otherwise rely on imports, a force that we label <em>insurance innovation</em>. Because insurance innovation reduces the gains from specialization under free trade, the prospect of fragmentation can be costly even if it never materializes.</p></details>
+          </div>
+          <ul class="links"></ul>
+        </article>
+
+        <article class="paper">
+          <div>
+            <h3>Escaping Protectionism: Discriminatory Tariffs <br class="br-wide">and Endogenous Transshipment</h3>
+            <p class="authors">with Feodora Teti and Joschka Wanner</p>
+            <details><summary>Abstract</summary><p>We study how discriminatory tariffs create incentives to reroute goods through third countries, focusing on the 2025–26 US tariffs. In a quantitative trade model with endogenous transshipment, we show that rerouting substantially dampens the fall in US imports due to the additional tariffs and reduces tariff revenue. Standard quantifications that assume full enforcement of tariff hikes therefore overstate the effects of such barriers.</p></details>
+          </div>
+          <ul class="links"></ul>
         </article>
       </div>
     </section>
