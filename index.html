@@ -190,6 +190,8 @@ h2 {
 .paper h3 a { color: var(--ink); text-decoration: none; }
 .paper h3 a:hover { color: var(--accent-strong); text-decoration: underline; text-decoration-color: var(--accent); }
 .paper .authors { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+.paper .authors a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.paper .authors a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
 .paper .venue { margin: 2px 0 0; font-size: 15px; }
 .paper .venue em { font-family: var(--serif); font-size: 16.5px; font-weight: 600; }
 .paper .status { margin: 2px 0 0; font: italic 400 16.5px/1.5 var(--serif); }
@@ -297,7 +299,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3><a href="https://www.nature.com/articles/s41597-025-06488-2" target="_blank" rel="noopener">Tackling Discrepancies in Trade Data: The Harvard Growth Lab International Trade Datasets</a></h3>
-            <p class="authors">Joint first author with Sebastián Bustos and Ellie Jackson; with Brendan Leonard, Nil Tuzcu, Piotr Lukaszuk, Annie White, Ricardo Hausmann, and Muhammed A. Yıldırım</p>
+            <p class="authors">Joint first author with <a href="https://scholar.google.com/citations?user=0E5v5YgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sebastián Bustos</a> and <a href="https://growthlab.hks.harvard.edu/person/ellie-jackson/" target="_blank" rel="noopener">Ellie Jackson</a>; with <a href="https://bleonard.dev/" target="_blank" rel="noopener">Brendan Leonard</a>, <a href="https://www.niltuzcu.net/" target="_blank" rel="noopener">Nil Tuzcu</a>, <a href="https://www.piotrlukaszuk.com/" target="_blank" rel="noopener">Piotr Lukaszuk</a>, <a href="https://growthlab.hks.harvard.edu/person/annie-white/" target="_blank" rel="noopener">Annie White</a>, <a href="https://www.ricardohausmann.com/" target="_blank" rel="noopener">Ricardo Hausmann</a>, and <a href="https://sites.google.com/site/yildirim" target="_blank" rel="noopener">Muhammed A. Yıldırım</a></p>
             <p class="venue"><em>Scientific Data</em>, vol. 13, article no. 170, 2026</p>
             <details><summary>Abstract</summary><p>The raw bilateral trade data reported by UN Comtrade suffer from two structural problems: reporting differences between country partners and countries reporting in different product classification systems, which require product-level harmonization to compare data across countries. In this paper, we address these challenges by combining a mirroring technique and a data-driven concordance method. Mirroring reconciles importer and exporter differences by estimating country reporting reliability and applying a weighted country-pair average to calculate the estimated trade value. We harmonize product classifications across vintages by calculating conversion weights that reflect a product's market share. The resulting publicly available datasets mitigate issues in raw trade statistics, reducing reporting inconsistencies while maintaining product-level granularity across six decades.</p></details>
           </div>
@@ -312,7 +314,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3><a href="https://academic.oup.com/jeea/article/23/4/1350/7903496" target="_blank" rel="noopener">Gravity with History: On Incumbency Effects in International Trade</a></h3>
-            <p class="authors">with Peter Egger, Reto Foellmi, and Ulrich Schetter</p>
+            <p class="authors">with <a href="https://mtec.ethz.ch/people/person-detail.MTY2NTM0.TGlzdC8xMDUwLC0yMDgyMjgwMDQ4.html" target="_blank" rel="noopener">Peter Egger</a>, <a href="https://sites.google.com/site/foellmireto/home" target="_blank" rel="noopener">Reto Foellmi</a>, and <a href="https://sites.google.com/view/ulrich-schetter" target="_blank" rel="noopener">Ulrich Schetter</a></p>
             <p class="venue"><em>Journal of the European Economic Association</em>, vol. 23, issue 4, 2025</p>
             <details><summary>Abstract</summary><p>Countries trade more if they liberalized their trade relationship earlier. We derive a gravity equation featuring this path dependence due to sunk market-access costs that generate incumbency effects. We provide supporting evidence for the underlying mechanism and derive an augmented ACR formula (Arkolakis et al., 2012) for the gains from trade that accounts for incumbency effects. A quantification suggests our mechanism explains up to 25% of countries' home shares, and the gains from trade are, on average, 10% larger when allowing for incumbency effects. The analysis further reveals novel distributional effects of trade, boosting real wages but reducing profits.</p></details>
           </div>
@@ -327,7 +329,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3><a href="https://doi.org/10.1016/j.jinteco.2024.104018" target="_blank" rel="noopener">Triangle Inequalities in International Trade: The Neglected Dimension</a></h3>
-            <p class="authors">with Reto Foellmi and Christian Hepenstrick</p>
+            <p class="authors">with <a href="https://sites.google.com/site/foellmireto/home" target="_blank" rel="noopener">Reto Foellmi</a> and <a href="https://ideas.repec.org/f/phe328.html" target="_blank" rel="noopener">Christian Hepenstrick</a></p>
             <p class="venue"><em>Journal of International Economics</em>, vol. 152, article no. 104018, 2024</p>
             <details><summary>Abstract</summary><p>Estimating trade costs is key to understanding the welfare effects of trade liberalizations. Cost minimization implies that the triangle inequality (TI) of international trade costs must hold for any three countries to avoid cross-border arbitrage. We show that re-routing opportunities might arise when trade costs change because a shipment through an intermediary becomes cheaper. The TI captures such re-routing opportunities. However, standard approaches to calculating the gains from trade liberalizations ignore the TI. We outline an estimation routine that is model-consistent and respects the TI. Counterfactual exercises suggest that the welfare gains from re-routing after trade liberalizations can be substantial.</p></details>
           </div>
@@ -358,7 +360,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3>Leaky Sanctions</h3>
-            <p class="authors">with Lisa Scheckenhofer, Feodora Teti, and Joschka Wanner</p>
+            <p class="authors">with <a href="https://www.ifo.de/scheckenhofer-l" target="_blank" rel="noopener">Lisa Scheckenhofer</a>, <a href="https://feodorateti.github.io/" target="_blank" rel="noopener">Feodora Teti</a>, and <a href="https://www.wiwi.uni-wuerzburg.de/qiee/team/prof-dr-joschka-wanner/" target="_blank" rel="noopener">Joschka Wanner</a></p>
             <p class="status">Draft coming soon</p>
             <details><summary>Abstract</summary><p>We use detailed customs records to document how sanctioned goods continue to reach Russia through third countries. Combining this evidence with a quantitative trade model that features endogenous transshipment, we study how evasion weakens export bans and how sanctions can be made more effective when trade can be rerouted.</p></details>
           </div>
@@ -371,7 +373,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3>Globalization, Superstar Effects, and the Concentration of Talent</h3>
-            <p class="authors">with Ulrich Schetter and Oriol Tejada</p>
+            <p class="authors">with <a href="https://sites.google.com/view/ulrich-schetter" target="_blank" rel="noopener">Ulrich Schetter</a> and <a href="https://sites.google.com/site/orioltejada/" target="_blank" rel="noopener">Oriol Tejada</a></p>
             <p class="status">Reject and resubmit, <em>Journal of International Economics</em>. Draft coming soon</p>
             <details><summary>Abstract</summary><p>We study how globalization changes who works with whom by creating incentives for forming highly productive teams. Combining evidence from inventor teams with a quantitative trade model, we quantify how the resulting concentration of talent affects inequality and the gains from trade.</p></details>
           </div>
@@ -381,7 +383,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3><a href="https://drive.google.com/file/d/1--bmPpJSFhUwnKYzpmviAOW2vSvQjh0c/view?usp=sharing" target="_blank" rel="noopener">Harmonizing the Harmonized System</a></h3>
-            <p class="authors">with Piotr Lukaszuk</p>
+            <p class="authors">with <a href="https://www.piotrlukaszuk.com/" target="_blank" rel="noopener">Piotr Lukaszuk</a></p>
             <p class="status">Under construction</p>
             <p class="note">The Harvard Growth Lab has adopted our method to harmonize its <a href="https://www.nature.com/articles/s41597-025-06488-2" target="_blank" rel="noopener">international trade datasets</a>.</p>
             <details><summary>Abstract</summary><p>International trade research relies heavily on data reported at the product level. Regular classification updates of the “Harmonized System” lead to intertemporal inconsistencies affecting up to 44% of world goods trade. Existing methods to standardize product vintages either drop numerous products over time or bulk updated codes into large synthetic categories. We largely overcome these issues by developing an algorithm that exploits the persistence of trade data to convert trade flows between vintages. Our conversion estimates are robust to year and sample choices. Provided a clear correspondence and persistent data, the algorithm can be applied to other classifications.</p></details>
@@ -400,7 +402,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3>Profit Shifting across Tax Havens: Evidence from the US Minimum Tax on Foreign Profits</h3>
-            <p class="authors">with Enea Baselgia and Julian Koller</p>
+            <p class="authors">with <a href="https://www.eneabaselgia.ch" target="_blank" rel="noopener">Enea Baselgia</a> and <a href="https://sites.google.com/view/juliankoller/about" target="_blank" rel="noopener">Julian Koller</a></p>
             <p class="status">Presentation stage</p>
             <details><summary>Abstract</summary><p>We study how minimum taxes affect where multinationals shift profits, using the US minimum tax on foreign profits introduced in 2017. We show that it led to substantial reallocations of profits across havens by narrowing the tax differences between them. Using detailed administrative data to look inside Switzerland, one of the major tax havens, we find that the profits of US-owned affiliates rose while their employment and sales fell.</p></details>
           </div>
@@ -410,7 +412,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3>Geopolitical Risk, Trade, and Directed Innovation</h3>
-            <p class="authors">with Julian Schärer</p>
+            <p class="authors">with <a href="https://sites.google.com/view/julianschaerer/home" target="_blank" rel="noopener">Julian Schärer</a></p>
             <p class="status">Presentation stage</p>
             <details><summary>Abstract</summary><p>We study how the risk of trade fragmentation affects innovation decisions and growth, even before barriers to international trade are imposed. In a dynamic quantitative model, firms respond to fragmentation risk by directing R&amp;D toward sectors in which they would otherwise rely on imports, a force that we label <em>insurance innovation</em>. Because insurance innovation reduces the gains from specialization under free trade, the prospect of fragmentation can be costly even if it never materializes. We quantify these costs and assess whether this risk can justify import or export controls.</p></details>
           </div>
@@ -420,7 +422,7 @@ footer address { font-style: normal; }
         <article class="paper">
           <div>
             <h3>Escaping Protectionism: Discriminatory Tariffs <br class="br-wide">and Endogenous Transshipment</h3>
-            <p class="authors">with Feodora Teti and Joschka Wanner</p>
+            <p class="authors">with <a href="https://feodorateti.github.io/" target="_blank" rel="noopener">Feodora Teti</a> and <a href="https://www.wiwi.uni-wuerzburg.de/qiee/team/prof-dr-joschka-wanner/" target="_blank" rel="noopener">Joschka Wanner</a></p>
             <p class="status">Presentation stage</p>
             <details><summary>Abstract</summary><p>We study how discriminatory tariffs create incentives to reroute goods through third countries, focusing on the 2025–26 US tariffs. In a quantitative trade model with endogenous transshipment, we show that rerouting substantially dampens the fall in US imports due to the additional tariffs and reduces tariff revenue. Standard quantifications that assume full enforcement of tariff hikes therefore overstate the effects of such barriers.</p></details>
           </div>
